@@ -1,7 +1,4 @@
-export const metadata = {
-  title: 'Golf | Herb Denmark - HD Consulting',
-  description: 'Herb Denmark shares his golf journey - learning the game in his 60s, tips for late starters, and embracing the high handicap life.',
-};
+'use client';
 
 export default function GolfPage() {
   return (

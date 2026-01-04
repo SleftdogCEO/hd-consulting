@@ -1,7 +1,4 @@
-export const metadata = {
-  title: 'Fishing | Herb Denmark - HD Consulting',
-  description: 'Join Herb Denmark on his fishing adventures. Tales from the water, favorite catches, and tips for fellow anglers.',
-};
+'use client';
 
 export default function FishingPage() {
   return (

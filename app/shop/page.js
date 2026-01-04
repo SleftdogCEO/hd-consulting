@@ -1,7 +1,4 @@
-export const metadata = {
-  title: 'Shop | Herb Denmark - HD Consulting',
-  description: 'Herb Denmark\'s favorite Florida golf wear and outdoor apparel. Style meets comfort on the course.',
-};
+'use client';
 
 export default function ShopPage() {
   const products = [
