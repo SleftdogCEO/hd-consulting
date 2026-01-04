@@ -1,5 +1,3 @@
-'use client';
-
 export default function ShopPage() {
   const products = [
     {
@@ -122,28 +120,28 @@ export default function ShopPage() {
       {/* Tips Section */}
       <section className="section tips-section">
         <div className="container">
-          <div className="tips-card">
-            <div className="tips-content">
+          <div className="shop-tips-card">
+            <div className="shop-tips-content">
               <div className="gold-line"></div>
               <h2>Herb&apos;s Florida Golf Tips</h2>
-              <div className="tips-grid">
-                <div className="tip">
-                  <span className="tip-number">01</span>
+              <div className="shop-tips-grid">
+                <div className="shop-tip">
+                  <span className="shop-tip-number">01</span>
                   <h4>Light Colors Only</h4>
                   <p>Dark colors absorb heat. Stick to whites, light blues, and pastels.</p>
                 </div>
-                <div className="tip">
-                  <span className="tip-number">02</span>
+                <div className="shop-tip">
+                  <span className="shop-tip-number">02</span>
                   <h4>UPF Protection</h4>
                   <p>Look for UPF 50+ rated shirts. Your skin will thank you.</p>
                 </div>
-                <div className="tip">
-                  <span className="tip-number">03</span>
+                <div className="shop-tip">
+                  <span className="shop-tip-number">03</span>
                   <h4>Skip the Belt</h4>
                   <p>Get pants with stretch waistbands. More comfortable, less bulky.</p>
                 </div>
-                <div className="tip">
-                  <span className="tip-number">04</span>
+                <div className="shop-tip">
+                  <span className="shop-tip-number">04</span>
                   <h4>Extra Gloves</h4>
                   <p>Sweaty hands ruin grips. Bring 2-3 gloves and rotate them.</p>
                 </div>
@@ -165,323 +163,6 @@ export default function ShopPage() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        .page-hero {
-          min-height: 60vh;
-          display: flex;
-          align-items: center;
-          background: linear-gradient(135deg, #1a472a 0%, #0f2a18 100%);
-          position: relative;
-          overflow: hidden;
-          padding: 140px 0 80px;
-          text-align: center;
-        }
-
-        .hero-bg-pattern {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: radial-gradient(rgba(201, 162, 39, 0.1) 1px, transparent 1px);
-          background-size: 40px 40px;
-          pointer-events: none;
-        }
-
-        .hero-content {
-          position: relative;
-          z-index: 1;
-          max-width: 700px;
-          margin: 0 auto;
-        }
-
-        .hero-tagline {
-          color: #c9a227;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-size: 0.9rem;
-          margin-bottom: 16px;
-        }
-
-        .hero-title {
-          font-size: 4rem;
-          color: white;
-          margin-bottom: 24px;
-          line-height: 1.1;
-        }
-
-        .gold-text {
-          background: linear-gradient(135deg, #c9a227 0%, #d4b94a 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .hero-description {
-          font-size: 1.4rem;
-          color: rgba(255, 255, 255, 0.85);
-          line-height: 1.8;
-        }
-
-        /* Intro Section */
-        .intro-section {
-          background: white;
-          padding: 80px 0;
-        }
-
-        .intro-content {
-          max-width: 700px;
-          margin: 0 auto;
-          text-align: center;
-        }
-
-        .intro-content h2 {
-          font-size: 2.5rem;
-          color: #1a472a;
-          margin-bottom: 24px;
-        }
-
-        .intro-content p {
-          font-size: 1.15rem;
-          color: #4b5563;
-          line-height: 1.8;
-          margin-bottom: 16px;
-        }
-
-        /* Products Section */
-        .products-section {
-          background: #f5f1e6;
-        }
-
-        .products-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 30px;
-        }
-
-        .product-card {
-          background: white;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-          transition: all 0.4s ease;
-          animation: fadeInUp 0.6s ease forwards;
-          opacity: 0;
-        }
-
-        .product-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .product-image {
-          aspect-ratio: 4/3;
-          background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-        }
-
-        .product-image svg {
-          width: 60px;
-          height: 60px;
-          stroke: rgba(255, 255, 255, 0.3);
-        }
-
-        .product-category {
-          position: absolute;
-          top: 16px;
-          left: 16px;
-          background: rgba(201, 162, 39, 0.9);
-          color: #1a472a;
-          padding: 6px 14px;
-          border-radius: 20px;
-          font-size: 0.8rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-        }
-
-        .product-details {
-          padding: 30px;
-        }
-
-        .product-brand {
-          color: #c9a227;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 0.85rem;
-          margin-bottom: 8px;
-        }
-
-        .product-name {
-          font-size: 1.4rem;
-          color: #1a472a;
-          margin-bottom: 12px;
-        }
-
-        .product-description {
-          color: #6b7280;
-          line-height: 1.7;
-          margin-bottom: 20px;
-          font-size: 0.95rem;
-        }
-
-        .product-link {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          color: #1a472a;
-          font-weight: 600;
-          transition: all 0.3s ease;
-        }
-
-        .product-link svg {
-          width: 18px;
-          height: 18px;
-          transition: transform 0.3s ease;
-        }
-
-        .product-link:hover {
-          color: #c9a227;
-        }
-
-        .product-link:hover svg {
-          transform: translate(3px, -3px);
-        }
-
-        /* Tips Section */
-        .tips-section {
-          background: white;
-        }
-
-        .tips-card {
-          background: linear-gradient(135deg, #1a472a 0%, #0f2a18 100%);
-          border-radius: 30px;
-          padding: 80px;
-          color: white;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .tips-card::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: radial-gradient(rgba(201, 162, 39, 0.1) 1px, transparent 1px);
-          background-size: 30px 30px;
-          pointer-events: none;
-        }
-
-        .tips-content {
-          position: relative;
-          z-index: 1;
-        }
-
-        .tips-content h2 {
-          font-size: 2.5rem;
-          margin-bottom: 50px;
-        }
-
-        .tips-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 40px;
-        }
-
-        .tip {
-          text-align: center;
-        }
-
-        .tip-number {
-          display: block;
-          font-family: 'Playfair Display', serif;
-          font-size: 2.5rem;
-          color: #c9a227;
-          margin-bottom: 16px;
-        }
-
-        .tip h4 {
-          font-size: 1.1rem;
-          margin-bottom: 10px;
-        }
-
-        .tip p {
-          font-size: 0.95rem;
-          opacity: 0.8;
-          line-height: 1.6;
-        }
-
-        /* Disclaimer */
-        .disclaimer-section {
-          background: #f5f1e6;
-          padding: 40px 0;
-        }
-
-        .disclaimer {
-          max-width: 800px;
-          margin: 0 auto;
-          text-align: center;
-          color: #6b7280;
-          font-size: 0.9rem;
-          line-height: 1.7;
-        }
-
-        .disclaimer strong {
-          color: #4b5563;
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-          .products-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-
-          .tips-card {
-            padding: 50px 30px;
-          }
-
-          .tips-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-          }
-        }
-
-        @media (max-width: 600px) {
-          .hero-title {
-            font-size: 2.5rem;
-          }
-
-          .products-grid {
-            grid-template-columns: 1fr;
-            max-width: 400px;
-            margin: 0 auto;
-          }
-
-          .tips-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
     </>
   );
 }

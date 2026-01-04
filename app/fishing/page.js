@@ -1,10 +1,8 @@
-'use client';
-
 export default function FishingPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="page-hero">
+      <section className="page-hero navy">
         <div className="hero-bg-pattern"></div>
         <div className="container">
           <div className="hero-content">
@@ -24,7 +22,7 @@ export default function FishingPage() {
         <div className="container">
           <div className="story-grid">
             <div className="story-image">
-              <div className="image-placeholder fishing-image">
+              <div className="image-placeholder navy">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                   <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
                 </svg>
@@ -148,7 +146,7 @@ export default function FishingPage() {
               </div>
             </div>
             <div className="tips-image">
-              <div className="image-placeholder">
+              <div className="image-placeholder navy">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                   <circle cx="12" cy="12" r="10"></circle>
                   <path d="M2 12h20"></path>
@@ -175,283 +173,6 @@ export default function FishingPage() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        .page-hero {
-          min-height: 60vh;
-          display: flex;
-          align-items: center;
-          background: linear-gradient(135deg, #1e3a5f 0%, #0f2640 100%);
-          position: relative;
-          overflow: hidden;
-          padding: 140px 0 80px;
-          text-align: center;
-        }
-
-        .hero-bg-pattern {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: radial-gradient(rgba(201, 162, 39, 0.1) 1px, transparent 1px);
-          background-size: 40px 40px;
-          pointer-events: none;
-        }
-
-        .hero-content {
-          position: relative;
-          z-index: 1;
-          max-width: 700px;
-          margin: 0 auto;
-        }
-
-        .hero-tagline {
-          color: #c9a227;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-size: 0.9rem;
-          margin-bottom: 16px;
-        }
-
-        .hero-title {
-          font-size: 4rem;
-          color: white;
-          margin-bottom: 24px;
-          line-height: 1.1;
-        }
-
-        .gold-text {
-          background: linear-gradient(135deg, #c9a227 0%, #d4b94a 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-
-        .hero-description {
-          font-size: 1.4rem;
-          color: rgba(255, 255, 255, 0.85);
-          line-height: 1.8;
-        }
-
-        /* Story Section */
-        .story-section {
-          background: white;
-        }
-
-        .story-grid {
-          display: grid;
-          grid-template-columns: 1fr 1.2fr;
-          gap: 80px;
-          align-items: center;
-        }
-
-        .story-content h2 {
-          font-size: 2.5rem;
-          color: #1e3a5f;
-          margin-bottom: 24px;
-        }
-
-        .story-content p {
-          font-size: 1.1rem;
-          color: #4b5563;
-          margin-bottom: 20px;
-          line-height: 1.8;
-        }
-
-        .image-placeholder {
-          aspect-ratio: 4/3;
-          background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8a 100%);
-          border-radius: 20px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          gap: 16px;
-        }
-
-        .image-placeholder svg {
-          width: 80px;
-          height: 80px;
-          stroke: #c9a227;
-        }
-
-        .image-placeholder span {
-          font-size: 1.2rem;
-          opacity: 0.8;
-        }
-
-        /* Catches Section */
-        .catches-section {
-          background: #f5f1e6;
-        }
-
-        .catches-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 30px;
-        }
-
-        .catch-card {
-          background: white;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-          transition: all 0.4s ease;
-        }
-
-        .catch-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-        }
-
-        .catch-image {
-          aspect-ratio: 16/10;
-          background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8a 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .catch-image svg {
-          width: 60px;
-          height: 60px;
-          stroke: #c9a227;
-        }
-
-        .catch-details {
-          padding: 30px;
-        }
-
-        .catch-details h3 {
-          font-size: 1.3rem;
-          color: #1e3a5f;
-          margin-bottom: 8px;
-        }
-
-        .catch-species {
-          color: #c9a227;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          font-size: 0.85rem;
-          margin-bottom: 12px;
-        }
-
-        .catch-story {
-          color: #6b7280;
-          line-height: 1.7;
-        }
-
-        /* Tips Section */
-        .tips-section {
-          background: white;
-        }
-
-        .tips-content {
-          display: grid;
-          grid-template-columns: 1.2fr 1fr;
-          gap: 80px;
-          align-items: center;
-        }
-
-        .tips-text h2 {
-          font-size: 2.5rem;
-          color: #1e3a5f;
-          margin-bottom: 40px;
-        }
-
-        .wisdom-list {
-          display: flex;
-          flex-direction: column;
-          gap: 30px;
-        }
-
-        .wisdom-item {
-          display: flex;
-          gap: 20px;
-          align-items: flex-start;
-        }
-
-        .wisdom-icon {
-          font-size: 2rem;
-          flex-shrink: 0;
-        }
-
-        .wisdom-item h4 {
-          font-size: 1.2rem;
-          color: #1e3a5f;
-          margin-bottom: 8px;
-        }
-
-        .wisdom-item p {
-          color: #6b7280;
-          line-height: 1.7;
-        }
-
-        /* CTA Section */
-        .cta-section {
-          background: #f5f1e6;
-          padding: 60px 0;
-        }
-
-        .cta-card {
-          background: linear-gradient(135deg, #1e3a5f 0%, #0f2640 100%);
-          border-radius: 30px;
-          padding: 60px;
-          text-align: center;
-          color: white;
-        }
-
-        .cta-card h2 {
-          font-size: 2.5rem;
-          margin-bottom: 16px;
-        }
-
-        .cta-card p {
-          font-size: 1.2rem;
-          opacity: 0.9;
-          margin-bottom: 30px;
-          max-width: 600px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-          .story-grid {
-            grid-template-columns: 1fr;
-            gap: 50px;
-          }
-
-          .catches-grid {
-            grid-template-columns: 1fr;
-            max-width: 500px;
-            margin: 0 auto;
-          }
-
-          .tips-content {
-            grid-template-columns: 1fr;
-            gap: 50px;
-          }
-
-          .tips-image {
-            order: -1;
-          }
-        }
-
-        @media (max-width: 600px) {
-          .hero-title {
-            font-size: 2.5rem;
-          }
-
-          .cta-card {
-            padding: 40px 24px;
-          }
-        }
-      `}</style>
     </>
   );
 }
